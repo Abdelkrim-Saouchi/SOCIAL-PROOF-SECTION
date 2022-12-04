@@ -9,12 +9,122 @@
     --white: hsl(0, 0%, 100%);
 }
 
-body {
-    font-family: 'League Spartan', sans-serif;
-    font-size: 15px;
-}
-
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    /* background-image: url("images/bg-pattern-top-desktop.svg");
+    background-repeat: no-repeat; */
+    background-color: var(--white);
+    min-height: 100vh;
+    margin: 48px 56px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 32px;
+}
+
+.upper-section {
+    display: flex;
+    justify-content: space-between;
+    
+    gap: 150px;
+}
+
+.intro {
+    flex: 1;
+}
+
+.rates {
+    flex: 1;
+    justify-self: flex-end;
+}
+
+h1 {
+    color: var(--very-dark-megenta);
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.intro p {
+    color: var(--dark-grayish-magenta);
+    font-weight: 400;
+}
+
+.rates__one, .rates__two, .rates__three {
+    padding: 12px 18px;
+    margin-bottom: 12px;
+    background-color: var(--light-grayish-magenta);
+    max-width: 320px;
+    color: var(--very-dark-megenta);
+    font-weight: 700;
+    border-radius: 6px;
+}
+
+.rates img {
+    width: 12px;
+}
+
+.rates img:last-child {
+    margin-right: 12px;
+}
+
+.rates__two {
+    margin-left: 30px;
+}
+
+.rates__three {
+    margin-left: 60px;
+}
+
+
+.lower-section {
+    display: flex;
+    gap: 16px;
+}
+
+.card {
+    background-color: var(--very-dark-megenta);
+    flex: 1;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+    color: var(--white);
+    border-radius: 12px;
+}
+
+.profile {
+    display: flex;
+    gap: 18px;
+    align-self: flex-start;
+}
+
+.profile img {
+    max-width: 36px;
+    border-radius: 50%;
+}
+
+h2 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.profile p {
+    color: var(--soft-pink);
 }
