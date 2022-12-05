@@ -155,3 +155,68 @@ h2 {
     position: relative;
     top: 36px;
 }
+
+@media (max-width: 1060px) {
+    main {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 860px) {
+    body {
+        background-image: url("images/bg-pattern-top-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: 100% 0%;
+    }
+    
+    main {
+        max-width: 80%;
+        align-items: center;
+        margin: 64px auto;
+    }
+
+    .upper-section {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .intro p {
+        text-align: center;
+    }
+
+    .rates {
+        direction: ltr;
+    }
+
+    .rates__one, .rates__two {
+        margin-right: 0;
+    }
+
+    .rates__one, .rates__two, .rates__three {
+        text-align: center;
+    }
+
+    span {
+        display: block;
+    }
+
+    .rates img {
+        width: 18px;
+    }
+
+    .lower-section {
+        flex-direction: column;
+        gap: 4px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card {
+        position: static;
+    }
+}
